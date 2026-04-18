@@ -56,3 +56,5 @@ dkms.conf
 
 cmake-build-debug
 .idea
+Debug
+Release

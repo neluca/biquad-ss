@@ -35,9 +35,9 @@ int biquad_design(struct biquad *iir, biquad_type_t type, float fs, float Q, flo
             b2 = (1.0f - cos_w) / 2.0f;
             break;
         case BIQUAD_HPF:
-            b0 = (1.0f - cos_w) / 2.0f;
-            b1 = -(1.0f - cos_w);
-            b2 = (1.0f - cos_w) / 2.0f;
+            b0 = (1.0f + cos_w) / 2.0f;
+            b1 = -(1.0f + cos_w);
+            b2 = (1.0f + cos_w) / 2.0f;
             break;
         case BIQUAD_BPF:
             b0 = alpha;
